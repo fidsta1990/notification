@@ -1,0 +1,14 @@
+albums.forEach((album) => {
+  album.addEventListener("click", () => {
+    // let a = [];
+    let store = album.childNodes.length;
+    // a.push(store);
+    saveBtn.addEventListener("click", slideList);
+    function slideList() {
+      let qty = store;
+      console.log(qty);
+      //   qty = "";
+      //   saveQty.appendChild(qty);
+    }
+  });
+});

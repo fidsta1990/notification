@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title">
+            <h1>Choose the albums you wish to download...</h1>
+        </div>
+        <!-- icon pop up -->
+        <div class="notification">
+            <div class="icon">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+            </div>
+            <div class="message">
+                <span>Downloads Complete <br> </span>
+                <span id="qty">0</span>
+            </div>
+        </div>
+        <!-- end icon pop up -->
+        <!-- album list -->
+        <div class="albums">
+            <div class="album" id="im-1">
+                <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Kendrick_Lamar_-_Damn.png" alt="kendrick"
+                    class="img-album">
+                <span class="album-title">kendrick</span>
+            </div>
+            <div class="album" id="im-2">
+                <img src="https://e.snmc.io/i/300/w/ae8d8b4357ee45fbe86c4ae601f2ad0b/5477289" alt="kendrick"
+                    class="img-album">
+                <span class="album-title">j cole</span>
+            </div>
+            <div class="album " id="im-3">
+                <img src="https://upload.wikimedia.org/wikipedia/en/c/cc/Nas-it-was-written-music-album.jpg" alt="nas"
+                    class="img-album">
+                <span class="album-title">nas</span>
+            </div>
+            <div class="album" id="im-4">
+                <img src="https://upload.wikimedia.org/wikipedia/en/2/2c/The_Blueprint.png" alt="jay z"
+                    class="img-album">
+                <span class="album-title">jay z</span>
+            </div>
+        </div>
+        <!-- end album list -->
+
+        <div class="btn-container">
+            <button class="btn" id="btn">Save</button>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

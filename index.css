@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(rgb(100, 8, 112), rgb(29, 29, 31));
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  /* place-items: center;
+  object-fit: cover; */
+}
+
+.container {
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: linear-gradient(rgb(100, 8, 112), rgb(29, 29, 31));
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 0 auto;
+  transition: all 0.3s linear;
+}
+
+.title {
+  height: 10vh;
+}
+.title h1 {
+  text-align: center;
+  padding: 5rem 0;
+  color: white;
+  font-size: 3rem;
+}
+
+.notification {
+  position: absolute;
+  top: 5%;
+  font-size: 1.5rem;
+  color: white;
+  right: -40%;
+  background: rgb(180, 178, 178);
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.icon ion-icon {
+  font-size: 2rem;
+  background: green;
+  border: transparent;
+  border-radius: 1rem;
+  /* color: white; */
+}
+
+.active {
+  right: 5%;
+}
+
+.albums {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 0.5rem 1rem;
+  align-items: center;
+  justify-items: center;
+  min-height: 70vh;
+  transition: all 0.3s linear;
+  /* margin-top: 10rem; */
+  max-width: 1000px;
+  margin: 10rem auto 0 auto;
+}
+
+.album {
+  transition: all 0.3s linear;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+.album span {
+  width: 300px;
+  padding: 3rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  background: grey;
+  border-bottom-right-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+  color: white;
+}
+.album:hover {
+  box-shadow: 0px 10px 15px grey;
+}
+
+.selected {
+  box-shadow: 0px 10px 15px rgb(156, 231, 36);
+}
+
+.btn-container {
+  text-align: center;
+  margin: 5rem auto;
+  width: 300px;
+}
+
+.btn {
+  padding: 1.5rem 5rem;
+  background: rgb(173, 133, 45);
+  border: none;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  font-size: 2rem;
+}
+
+.btn:hover {
+  background: coral;
+  box-shadow: 0px 10px 15px grey;
+  color: white;
+}
